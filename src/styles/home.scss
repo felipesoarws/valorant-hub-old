@@ -31,12 +31,15 @@ img {
     }
 }
 
-.kXteup {
+.kXteup,
+.hGRYOm {
     background-color: transparent;
 }
 
 .kXteup:hover:enabled,
-.kXteup:focus:enabled {
+.kXteup:focus:enabled,
+.hGRYOm:hover:enabled,
+.hGRYOm:focus:enabled {
     color: white !important;
     background-color: transparent !important;
     box-shadow: 0 0 0 0 !important;
