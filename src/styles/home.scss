@@ -53,6 +53,7 @@ img {
 .rec.rec-arrow:hover {
     border-radius: 51%;
 }
+
 /* hide disabled buttons */
 .rec.rec-arrow:disabled {
     visibility: hidden;
@@ -313,6 +314,7 @@ main.home__scss {
     .main__agents {
         margin: 1rem 1rem;
         padding: 1rem;
+        width: 100%;
 
         .main__agent {
             height: 18rem;
