@@ -38,6 +38,7 @@ class SimpleSlider extends Component {
     let arr = [];
     const { agents } = this.state;
     for (let x = 0; x < agents.length; x++) {
+      agents[x].displayName = agents[x].displayName.replace("/", "-");
       if (agents[x].isPlayableCharacter) {
         arr.push(agents[x]);
       }
