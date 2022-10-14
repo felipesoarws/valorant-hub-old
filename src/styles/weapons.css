@@ -103,7 +103,8 @@ img {
 body {
   background-color: #1f2334;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
+  overscroll-behavior: auto;
 }
 
 @media (min-width: 1024px) {
@@ -122,7 +123,6 @@ body {
 }
 
 .bg img {
-  height: 70vh;
   opacity: 0.15;
   -o-object-fit: cover;
      object-fit: cover;
@@ -361,11 +361,11 @@ header .header__menu__desktop .menu__desktop nav ul .link li {
           transform: translateY(-0.2rem);
 }
 
-main.home__scss {
+main.weapons__scss {
   margin: 1rem 2rem;
 }
 
-main.home__scss .main__title h1 {
+main.weapons__scss .main__title h1 {
   font-family: "Inter Tight", sans-serif;
   color: white;
   letter-spacing: 1px;
@@ -373,109 +373,18 @@ main.home__scss .main__title h1 {
 }
 
 @media (min-width: 1030px) {
-  main.home__scss .main__title h1 {
+  main.weapons__scss .main__title h1 {
     font-size: 3rem;
   }
 }
 
-main.home__scss .main__title p {
+main.weapons__scss .main__title p {
   color: #6f72ca;
   letter-spacing: 1px;
   font-size: 0.8rem;
 }
 
-main.home__scss .main__agents {
-  margin: 1rem 1rem;
-  padding: 1rem;
-  width: 100%;
-}
-
-main.home__scss .main__agents .main__agent {
-  height: 18rem;
-  width: 13rem;
-  border-radius: 0.7rem;
-  position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.7)));
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-  z-index: 10;
-  border: 1px solid #a4a2b0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  overflow: hidden;
-  padding: 0.4rem;
-}
-
-main.home__scss .main__agents .main__agent:hover {
-  border: 1px solid #5659bf;
-  background: rgba(86, 89, 191, 0.2);
-  cursor: pointer;
-}
-
-main.home__scss .main__agents .main__agent:hover .main__agent__bg {
-  background: -webkit-gradient(linear, left top, left bottom, from(#5659bf), to(transparent));
-  background: linear-gradient(#5659bf, transparent);
-}
-
-main.home__scss .main__agents .main__agent:hover .main__agent__title h1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#5659bf));
-  background: linear-gradient(transparent, #5659bf);
-}
-
-main.home__scss .main__agents .main__agent:hover .main__agent__portait img {
-  -webkit-transform: scale(1.6) translateY(1.5rem);
-          transform: scale(1.6) translateY(1.5rem);
-  -webkit-filter: drop-shadow(0px 0px 2px black);
-          filter: drop-shadow(0px 0px 2px black);
-}
-
-main.home__scss .main__agents .main__agent .main__agent__bg {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  border-radius: 0.7rem;
-}
-
-main.home__scss .main__agents .main__agent .main__agent__bg img {
-  z-index: -10;
-  opacity: 0.5;
-  height: 15rem;
-  border-radius: 0.7rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
-  -webkit-mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
-          mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
-          mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
-}
-
-main.home__scss .main__agents .main__agent .main__agent__title {
-  text-align: center;
-  z-index: 10;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-main.home__scss .main__agents .main__agent .main__agent__title h1 {
-  z-index: -1;
-  color: white;
-  font-family: "Inter Tight", sans-serif;
-  font-size: 1.3rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.7)));
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-  border-radius: 0.7rem;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  height: 3rem;
-}
-
-@media (min-width: 768px) {
-  main.home__scss .main__agents .main__agent .main__agent__title h1 {
-    font-size: 1.8rem;
-  }
-}
-
-main.home__scss .main__agents .main__agent .main__agent__portait {
+main.weapons__scss .main__weapons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,18 +394,71 @@ main.home__scss .main__agents .main__agent .main__agent__portait {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem 0;
 }
 
-main.home__scss .main__agents .main__agent .main__agent__portait img {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  width: 19rem;
-  -webkit-transform: scale(1.4) translateY(1rem);
-          transform: scale(1.4) translateY(1rem);
+main.weapons__scss .main__weapons .main__weapon {
+  height: 10rem;
+  width: 16rem;
+  margin: 1rem 0;
 }
-/*# sourceMappingURL=home.css.map */
+
+main.weapons__scss .main__weapons .main__weapon .main__weapon__bg {
+  position: relative;
+}
+
+main.weapons__scss .main__weapons .main__weapon .main__weapon__bg img.bg__image {
+  z-index: -10;
+  opacity: 0.5;
+  border-radius: 0.7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+  -webkit-mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+          mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+          mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+}
+
+main.weapons__scss .main__weapons .main__weapon .main__weapon__bg .main__weapon__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+main.weapons__scss .main__weapons .main__weapon .main__weapon__bg .main__weapon__icon img {
+  width: 11rem;
+}
+
+main.weapons__scss .main__weapons .main__weapon .main__weapon__bg .main__weapon__icon img:nth-child(1) {
+  width: 13rem;
+}
+
+main.weapons__scss .main__weapons .main__weapon .main__weapon__title {
+  position: absolute;
+  left: 0.8rem;
+  bottom: 2rem;
+  z-index: 10;
+}
+
+main.weapons__scss .main__weapons .main__weapon .main__weapon__title h1 {
+  color: white;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-family: "Inter Tight", sans-serif;
+}
+/*# sourceMappingURL=weapons.css.map */

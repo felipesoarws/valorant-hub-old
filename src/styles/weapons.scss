@@ -87,7 +87,8 @@ img {
 body {
     background-color: #1f2334;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
+    overscroll-behavior: auto;
 
     @media (min-width: 1024px) {
         padding: 1rem 7rem;
@@ -103,7 +104,6 @@ body {
     overflow: hidden;
 
     img {
-        height: 70vh;
         opacity: 0.15;
         object-fit: cover;
 
@@ -293,7 +293,7 @@ header {
     }
 }
 
-main.home__scss {
+main.weapons__scss {
     margin: 1rem 2rem;
 
     .main__title {
@@ -309,57 +309,28 @@ main.home__scss {
         }
 
         p {
-            color: rgb(111, 114, 202);
+            color: #6f72ca;
             letter-spacing: 1px;
             font-size: 0.8rem;
         }
     }
 
-    .main__agents {
-        margin: 1rem 1rem;
-        padding: 1rem;
-        width: 100%;
+    .main__weapons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 2rem 0;
 
-        .main__agent {
-            height: 18rem;
-            width: 13rem;
-            border-radius: 0.7rem;
-            position: relative;
-            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-            z-index: 10;
-            border: 1px solid #a4a2b0;
-            transition: all 0.2s ease-in-out;
-            overflow: hidden;
-            padding: 0.4rem;
-
-            &:hover {
-                border: 1px solid rgba(86, 89, 191, 1);
-                background: rgba(86, 89, 191, 0.2);
-
-                cursor: pointer;
-
-                .main__agent__bg {
-                    background: linear-gradient(rgba(86, 89, 191, 1), transparent);
-                }
-
-                .main__agent__title h1 {
-                    background: linear-gradient(transparent, rgba(86, 89, 191, 1));
-                }
-
-                .main__agent__portait img {
-                    transform: scale(1.6) translateY(1.5rem);
-                    filter: drop-shadow(0px 0px 2px black);
-                }
-            }
-
-            .main__agent__bg {
-                transition: all 0.3s ease-in-out;
-                border-radius: 0.7rem;
-
-                img {
+        .main__weapon {
+            height: 10rem;
+            width: 16rem;
+            margin: 1rem 0;
+            .main__weapon__bg {
+                position: relative;
+                img.bg__image {
                     z-index: -10;
                     opacity: 0.5;
-                    height: 15rem;
                     border-radius: 0.7rem;
                     object-fit: cover;
                     -webkit-mask-image: -webkit-gradient(
@@ -371,46 +342,37 @@ main.home__scss {
                     );
                     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
                 }
-            }
 
-            .main__agent__title {
-                text-align: center;
-                z-index: 10;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
+                .main__weapon__icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
 
-                h1 {
-                    z-index: -1;
-                    color: white;
-                    font-family: "Inter Tight", sans-serif;
-                    font-size: 1.3rem;
-                    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-                    border-radius: 0.7rem;
-                    transition: all 0.3s ease-in-out;
-                    height: 3rem;
+                    img {
+                        width: 11rem;
 
-                    @media (min-width: 768px) {
-                        font-size: 1.8rem;
+                        &:nth-child(1) {
+                            width: 13rem;
+                        }
                     }
                 }
             }
 
-            .main__agent__portait {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                z-index: 1;
+            .main__weapon__title {
                 position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-
-                img {
-                    transition: all 0.3s ease-in-out;
-                    width: 19rem;
-                    transform: scale(1.4) translateY(1rem);
+                left: 0.8rem;
+                bottom: 2rem;
+                z-index: 10;
+                h1 {
+                    color: white;
+                    font-size: 1.3rem;
+                    letter-spacing: 1px;
+                    font-family: "Inter Tight", sans-serif;
                 }
             }
         }
