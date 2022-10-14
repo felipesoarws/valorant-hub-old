@@ -27,8 +27,8 @@ class SimpleSlider extends Component {
       { width: 850, itemsToShow: 3, itemsToScroll: 3 },
       { width: 910, itemsToShow: 4, itemsToScroll: 3 },
       { width: 1024, itemsToShow: 5, itemsToScroll: 3 },
-      { width: 1070, itemsToShow: 7, itemsToScroll: 3 },
-      { width: 1150, itemsToShow: 7, itemsToScroll: 4 },
+      { width: 1070, itemsToShow: 6, itemsToScroll: 3 },
+      { width: 1150, itemsToShow: 5, itemsToScroll: 4 },
       { width: 1450, itemsToShow: 7 },
       { width: 1750, itemsToShow: 9 },
     ];
@@ -47,7 +47,10 @@ class SimpleSlider extends Component {
     return (
       <Carousel breakPoints={this.breakPoints} itemPadding={[10, 8]}>
         {arr.map((agent, index) => (
-          <Link to={`agents/${agent.displayName.toLowerCase()}/${agent.uuid}`}>
+          <Link
+            to={`agents/${agent.displayName.toLowerCase()}/${agent.uuid}`}
+            key={index}
+          >
             <div className="main__agent" key={index}>
               <div className="main__agent__bg">
                 <img src={cardAgentBG} alt="" />
