@@ -18,13 +18,30 @@ import cardAgentBG from "../assets/card_bg.webp";
 
 export default function Weapons() {
   const [weapons, setWeapons] = useState([]);
+  let [category, setCategories] = useState([]);
+  let weaponsArr = [];
+  let categoriesArr = [];
   useEffect(() => {
     document.title = `Valorant Hub | Weapons`;
 
     fetch("https://valorant-api.com/v1/weapons")
       .then((res) => res.json())
-      .then((data) => setWeapons(data.data));
+      .then((data) => getData(data.data));
   });
+
+  let categoryFiltred = category.filter((item, index) => {
+    return category.indexOf(item) === index;
+  });
+
+  const getData = (data) => {
+    for (let i = 0; i < data.length; i++) {
+      data[i].category = data[i].category.split("::")[1];
+      weaponsArr.push(data[i]);
+      categoriesArr.push(data[i].category);
+    }
+    setWeapons(weaponsArr);
+    setCategories(categoriesArr);
+  };
 
   const showMobileMenu = () => {
     const menuMobile = document.querySelector(".menu__mobile");
@@ -124,7 +141,13 @@ export default function Weapons() {
           <h1>Weapons</h1>
           <p>Discover all valorant weapons!</p>
         </div>
-        <div className="main__filter"></div>
+        <div className="main__filter">
+          <select name="filter" id="filter">
+            {categoryFiltred.map((i, index) => (
+              <option value={i}>{i}</option>
+            ))}
+          </select>
+        </div>
         <div className="main__weapons">
           {weapons.map((i, index) => (
             <div className="main__weapon" key={index}>
