@@ -296,6 +296,14 @@ header {
 main.weapons__scss {
     margin: 1rem 2rem;
 
+    .flex {
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
     .main__title {
         h1 {
             font-family: "Inter Tight", sans-serif;
@@ -315,6 +323,31 @@ main.weapons__scss {
         }
     }
 
+    .main__filter {
+        margin: 1rem 0;
+
+        select,
+        option {
+            width: 100%;
+            padding: 0.7rem;
+            border: 0;
+            outline: 0;
+            background: transparent;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 1px 1px #a4a2b0;
+            color: white;
+
+            @media (min-width: 768px) {
+                width: 20rem;
+            }
+        }
+
+        option {
+            color: black;
+            border-radius: 0.5rem;
+        }
+    }
+
     .main__weapons {
         display: flex;
         align-items: center;
@@ -322,10 +355,69 @@ main.weapons__scss {
         flex-direction: column;
         margin: 2rem 0;
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        @media (min-width: 1440px) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
         .main__weapon {
             height: 10rem;
             width: 16rem;
             margin: 1rem 0;
+            display: none;
+            visibility: hidden;
+            cursor: pointer;
+            border-radius: 0.8rem;
+            z-index: 10;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background: rgba(128, 0, 128, 0.3);
+            }
+
+            &:hover .main__weapon__icon img {
+                transform: scale(1.1);
+                filter: drop-shadow(0 0 2px 2px black);
+            }
+
+            @media (min-width: 375px) {
+                width: 20rem;
+            }
+
+            @media (min-width: 1024px) {
+                width: 18rem;
+            }
+
+            @media (min-width: 1200px) {
+                width: 21rem;
+            }
+
+            @media (min-width: 1440px) {
+                width: 22rem;
+            }
+
+            &.show {
+                display: block;
+                visibility: visible;
+            }
+
             .main__weapon__bg {
                 position: relative;
                 img.bg__image {
@@ -355,6 +447,7 @@ main.weapons__scss {
 
                     img {
                         width: 11rem;
+                        transition: all 0.3s ease-in-out;
 
                         &:nth-child(1) {
                             width: 13rem;
@@ -366,7 +459,7 @@ main.weapons__scss {
             .main__weapon__title {
                 position: absolute;
                 left: 0.8rem;
-                bottom: 2rem;
+                bottom: 1.7rem;
                 z-index: 10;
                 h1 {
                     color: white;

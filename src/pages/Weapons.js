@@ -21,6 +21,7 @@ export default function Weapons() {
   let [category, setCategories] = useState([]);
   let weaponsArr = [];
   let categoriesArr = [];
+
   useEffect(() => {
     document.title = `Valorant Hub | Weapons`;
 
@@ -34,10 +35,24 @@ export default function Weapons() {
   });
 
   const getData = (data) => {
+    let optionValue = document.querySelector("select").value;
+    const allWeapons = document.querySelectorAll(".main__weapon");
+
     for (let i = 0; i < data.length; i++) {
       data[i].category = data[i].category.split("::")[1];
+
       weaponsArr.push(data[i]);
       categoriesArr.push(data[i].category);
+    }
+
+    for (let i = 0; i < allWeapons.length; i++) {
+      if (optionValue === "all") {
+        allWeapons[i].classList.add("show");
+      } else if (optionValue === allWeapons[i].classList[0]) {
+        allWeapons[i].classList.add("show");
+      } else {
+        allWeapons[i].classList.remove("show");
+      }
     }
     setWeapons(weaponsArr);
     setCategories(categoriesArr);
@@ -137,20 +152,24 @@ export default function Weapons() {
         </div>
       </header>
       <main className="weapons__scss">
-        <div className="main__title">
-          <h1>Weapons</h1>
-          <p>Discover all valorant weapons!</p>
-        </div>
-        <div className="main__filter">
-          <select name="filter" id="filter">
-            {categoryFiltred.map((i, index) => (
-              <option value={i}>{i}</option>
-            ))}
-          </select>
+        <div className="flex">
+          <div className="main__title">
+            <h1>Weapons</h1>
+            <p>Discover all valorant weapons!</p>
+          </div>
+          <div className="main__filter">
+            <select name="filter" id="filter">
+              <option value="all">All categories</option>
+
+              {categoryFiltred.map((i, index) => (
+                <option value={i}>{i}</option>
+              ))}
+            </select>
+          </div>
         </div>
         <div className="main__weapons">
           {weapons.map((i, index) => (
-            <div className="main__weapon" key={index}>
+            <div className={`${i.category} main__weapon show`} key={index}>
               <div className="main__weapon__bg">
                 <img src={cardAgentBG} alt="" className="bg__image" />
 
