@@ -6,6 +6,7 @@ import Weapons from "./pages/Weapons";
 import Maps from "./pages/Maps";
 
 import DetailedAgent from "./components/DetailedAgent";
+import WeaponSkins from "./components/WeaponSkins";
 
 // carousel
 import "../node_modules/slick-carousel/slick/slick.css";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/weapons" element={<Weapons />} />
         <Route path="/maps" element={<Maps />} />
         <Route path="/agents/:name/:id" element={<DetailedAgent />} />
+        <Route path="/weapons/skins/:name/:id" element={<WeaponSkins />} />
       </Routes>
     </Router>
   );

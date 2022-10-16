@@ -16,6 +16,9 @@ import valorantLOGO from "../assets/vlr_logo.png";
 import valorantBG3 from "../assets/map_bg2.webp";
 import cardAgentBG from "../assets/card_bg.webp";
 
+// components
+import WeaponSkins from "../components/WeaponSkins";
+
 export default function Weapons() {
   const [weapons, setWeapons] = useState([]);
   let [category, setCategories] = useState([]);
@@ -170,17 +173,22 @@ export default function Weapons() {
         <div className="main__weapons">
           {weapons.map((i, index) => (
             <div className={`${i.category} main__weapon show`} key={index}>
-              <div className="main__weapon__bg">
-                <img src={cardAgentBG} alt="" className="bg__image" />
+              <Link
+                to={`skins/${i.displayName.toLowerCase()}/${i.uuid}`}
+                key={index}
+              >
+                <div className="main__weapon__bg">
+                  <img src={cardAgentBG} alt="" className="bg__image" />
 
-                <div className="main__weapon__title">
-                  <h1>{i.displayName}</h1>
-                </div>
+                  <div className="main__weapon__title">
+                    <h1>{i.displayName}</h1>
+                  </div>
 
-                <div className="main__weapon__icon">
-                  <img src={i.displayIcon} alt="" />
+                  <div className="main__weapon__icon">
+                    <img src={i.displayIcon} alt="" />
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           ))}
         </div>

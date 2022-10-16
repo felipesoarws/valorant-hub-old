@@ -76,8 +76,8 @@ export default function DetailedAgent() {
             <h1>Abilities</h1>
 
             <div className="agent__details__abilities__row">
-              {abilitiesFiltred.map((ab) => (
-                <div className="agent__details__ability">
+              {abilitiesFiltred.map((ab, index) => (
+                <div className="agent__details__ability" key={index}>
                   <img src={ab.displayIcon} alt="" />
                   <p>{ab.displayName}</p>
                 </div>
