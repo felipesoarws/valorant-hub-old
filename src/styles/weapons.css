@@ -576,7 +576,7 @@ main.weapons__scss .main__weapons .main__weapon .main__weapon__bg .main__weapon_
 main.weapons__scss .main__weapons .main__weapon .main__weapon__title {
   position: absolute;
   left: 0.8rem;
-  bottom: 1.7rem;
+  top: 0.8rem;
   z-index: 10;
 }
 
