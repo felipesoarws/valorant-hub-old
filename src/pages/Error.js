@@ -20,7 +20,7 @@ export default function Error() {
       <main>
         <div className="main__title__error">
           <h1>This page doesn't exist.</h1>
-          <p>Click in the icon to back to homepage.</p>
+          <p>Click in the icon to back to the homepage.</p>
           <div className="header__logo">
             <Link to="/">
               <img src={valorantLOGO} alt="logo" />
