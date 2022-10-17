@@ -1,15 +1,7 @@
 ## Valorant Hub
 ![Captura de tela 2022-10-17 095938](https://user-images.githubusercontent.com/86936050/196183441-3e95945c-96c7-47a7-b74b-0c583bb6e018.png)
 
-## Instalação
 
-Instale valorant-hub com npm
-
-```bash
-  npm install valorant-hub
-  cd valorant-hub
-```
-    
 ## Stack utilizada
 
 **Front-end:** React e SCSS.
