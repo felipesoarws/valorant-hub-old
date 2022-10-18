@@ -6,6 +6,7 @@ import { BiUserPin } from "react-icons/bi";
 import { TbMapSearch } from "react-icons/tb";
 import { RiKnifeLine } from "react-icons/ri";
 import { BiMenuAltRight } from "react-icons/bi";
+import { AiOutlineTrophy } from "react-icons/ai";
 
 // hooks
 import { Link, Routes, Route } from "react-router-dom";
@@ -67,6 +68,14 @@ export default function Home() {
                 <li>Maps</li>
               </Link>
             </div>
+            <div className="link">
+              {" "}
+              <Link to="/ranks">
+                <AiOutlineTrophy />
+
+                <li>Ranks</li>
+              </Link>
+            </div>
           </ul>
         </nav>
       </div>
@@ -108,6 +117,14 @@ export default function Home() {
                     <TbMapSearch />
 
                     <li>Maps</li>
+                  </Link>
+                </div>
+                <div className="link">
+                  {" "}
+                  <Link to="/ranks">
+                    <AiOutlineTrophy />
+
+                    <li>Ranks</li>
                   </Link>
                 </div>
               </ul>

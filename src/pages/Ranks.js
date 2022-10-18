@@ -1,5 +1,5 @@
 // scss
-import "../styles/weapons.scss";
+import "../styles/ranks.scss";
 
 // icons
 import { BiUserPin } from "react-icons/bi";
@@ -14,53 +14,24 @@ import { useEffect, useState } from "react";
 
 // assets
 import valorantLOGO from "../assets/vlr_logo.png";
-import valorantBG3 from "../assets/map_bg2.webp";
-import cardAgentBG from "../assets/card_bg.webp";
+import valorantBG2 from "../assets/map_bg4.webp";
 
-// components
-import WeaponSkins from "../components/WeaponSkins";
+export default function Ranks() {
+  const [ranks, setRanks] = useState([]);
 
-export default function Weapons() {
-  const [weapons, setWeapons] = useState([]);
-  let [category, setCategories] = useState([]);
-  let weaponsArr = [];
-  let categoriesArr = [];
+  let ranksFiltred = ranks.filter((rank) => {
+    return rank.largeIcon !== null;
+  });
+
+  ranksFiltred.shift();
 
   useEffect(() => {
-    document.title = `Valorant Hub | Weapons`;
+    document.title = `Valorant Hub | Ranks`;
 
-    fetch("https://valorant-api.com/v1/weapons")
+    fetch("https://valorant-api.com/v1/competitivetiers")
       .then((res) => res.json())
-      .then((data) => getData(data.data));
+      .then((data) => setRanks(data.data[4].tiers));
   });
-
-  let categoryFiltred = category.filter((item, index) => {
-    return category.indexOf(item) === index;
-  });
-
-  const getData = (data) => {
-    let optionValue = document.querySelector("select").value;
-    const allWeapons = document.querySelectorAll(".main__weapon");
-
-    for (let i = 0; i < data.length; i++) {
-      data[i].category = data[i].category.split("::")[1];
-
-      weaponsArr.push(data[i]);
-      categoriesArr.push(data[i].category);
-    }
-
-    for (let i = 0; i < allWeapons.length; i++) {
-      if (optionValue === "all") {
-        allWeapons[i].classList.add("show");
-      } else if (optionValue === allWeapons[i].classList[0]) {
-        allWeapons[i].classList.add("show");
-      } else {
-        allWeapons[i].classList.remove("show");
-      }
-    }
-    setWeapons(weaponsArr);
-    setCategories(categoriesArr);
-  };
 
   const showMobileMenu = () => {
     const menuMobile = document.querySelector(".menu__mobile");
@@ -75,7 +46,7 @@ export default function Weapons() {
   return (
     <div className="App">
       <div className="bg fade-out">
-        <img src={valorantBG3} alt="background"></img>
+        <img src={valorantBG2} alt="background"></img>
       </div>
       <div className="menu__mobile">
         <nav>
@@ -87,7 +58,7 @@ export default function Weapons() {
                 <li>Agents</li>
               </Link>
             </div>
-            <div className="link selected">
+            <div className="link">
               {" "}
               <Link to="/weapons">
                 <RiKnifeLine />
@@ -103,7 +74,7 @@ export default function Weapons() {
                 <li>Maps</li>
               </Link>
             </div>
-            <div className="link ">
+            <div className="link selected">
               {" "}
               <Link to="/ranks">
                 <AiOutlineTrophy />
@@ -142,7 +113,7 @@ export default function Weapons() {
                     <li>Agents</li>
                   </Link>
                 </div>
-                <div className="link selected">
+                <div className="link">
                   {" "}
                   <Link to="/weapons">
                     <RiKnifeLine />
@@ -158,7 +129,7 @@ export default function Weapons() {
                     <li>Maps</li>
                   </Link>
                 </div>
-                <div className="link ">
+                <div className="link selected">
                   {" "}
                   <Link to="/ranks">
                     <AiOutlineTrophy />
@@ -171,41 +142,23 @@ export default function Weapons() {
           </div>
         </div>
       </header>
-      <main className="weapons__scss">
-        <div className="flex">
-          <div className="main__title">
-            <h1>Weapons</h1>
-            <p>Discover all valorant weapons!</p>
-          </div>
-          <div className="main__filter">
-            <select name="filter" id="filter">
-              <option value="all">All categories</option>
-
-              {categoryFiltred.map((i, index) => (
-                <option value={i}>{i}</option>
-              ))}
-            </select>
-          </div>
+      <main className="maps__scss">
+        <div className="main__title">
+          <h1>Ranks</h1>
+          <p>Discover all competitive ranks!</p>
         </div>
-        <div className="main__weapons">
-          {weapons.map((i, index) => (
-            <div className={`${i.category} main__weapon show`} key={index}>
-              <Link
-                to={`skins/${i.displayName.toLowerCase()}/${i.uuid}`}
-                key={index}
-              >
-                <div className="main__weapon__bg">
-                  <img src={cardAgentBG} alt="" className="bg__image" />
-
-                  <div className="main__weapon__title">
-                    <h1>{i.displayName}</h1>
-                  </div>
-
-                  <div className="main__weapon__icon">
-                    <img src={i.displayIcon} alt="" />
-                  </div>
-                </div>
-              </Link>
+        <div className="main__ranks">
+          {ranksFiltred.map((rank, index) => (
+            <div
+              className={`main__rank ${rank.tierName.toLowerCase()}`}
+              key={index}
+            >
+              <div className="main__ranks__icon">
+                <img src={rank.largeIcon} alt="" />
+              </div>
+              <div className="main__ranks__title">
+                <h1>{rank.tierName}</h1>
+              </div>
             </div>
           ))}
         </div>
