@@ -24,7 +24,7 @@ import DetailedAgent from "../components/DetailedAgent";
 
 export default function Home() {
   useEffect(() => {
-    document.title = `Valorant Hub`;
+    document.title = `Valorant Hub | @felipesoarws`;
   });
 
   const showMobileMenu = () => {
