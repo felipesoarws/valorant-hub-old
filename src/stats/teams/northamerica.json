@@ -1,0 +1,164 @@
+{
+  "teams": [
+    {
+      "team_name": "Evil Geniuses",
+      "team_logo": "//owcdn.net/img/62a409ad29351.png",
+      "team_url": "www.vlr.gg/team/5248/evil-geniuses",
+      "team_rank": "1",
+      "rating_score": "2000",
+      "recent_match": {
+        "match_url": "www.vlr.gg/248277/paper-rex-vs-evil-geniuses-valorant-champions-2023-playoffs-gf",
+        "match_time": "174d ago",
+        "opponent_team_name": "Paper Rex",
+        "opponent_team_logo_url": "//owcdn.net/img/62bbeba74d5cb.png"
+      },
+      "win_streak": "2W",
+      "record": "17–10",
+      "total_winnings": "$1,280,250"
+    },
+    {
+      "team_name": "M80",
+      "team_logo": "//owcdn.net/img/63d91e60a84bc.png",
+      "team_url": "www.vlr.gg/team/11001/m80",
+      "team_rank": "2",
+      "rating_score": "1880",
+      "recent_match": {
+        "match_url": "www.vlr.gg/232895/the-guard-vs-m80-champions-tour-2023-americas-ascension-gf",
+        "match_time": "222d ago",
+        "opponent_team_name": "The Guard",
+        "opponent_team_logo_url": "//owcdn.net/img/649d272e6ef32.png"
+      },
+      "win_streak": "1L",
+      "record": "19–5",
+      "total_winnings": "$104,850"
+    },
+    {
+      "team_name": "G2 Esports",
+      "team_logo": "//owcdn.net/img/633822848a741.png",
+      "team_url": "www.vlr.gg/team/11058/g2-esports",
+      "team_rank": "3",
+      "rating_score": "1851",
+      "recent_match": {
+        "match_url": "www.vlr.gg/282932/oxygen-esports-vs-g2-esports-sentinels-invitational-sf",
+        "match_time": "105d ago",
+        "opponent_team_name": "Oxygen Esports",
+        "opponent_team_logo_url": "//owcdn.net/img/653fa8ce98a2e.png"
+      },
+      "win_streak": "1L",
+      "record": "18–9",
+      "total_winnings": "$167,250"
+    },
+    {
+      "team_name": "NRG Esports",
+      "team_logo": "//owcdn.net/img/62874d7ac0534.png",
+      "team_url": "www.vlr.gg/team/1034/nrg-esports",
+      "team_rank": "4",
+      "rating_score": "1834",
+      "recent_match": {
+        "match_url": "www.vlr.gg/295605/nrg-esports-vs-furia-champions-tour-2024-americas-kickoff-opening-a",
+        "match_time": "3h ago",
+        "opponent_team_name": "FURIA",
+        "opponent_team_logo_url": "//owcdn.net/img/632be843b7d51.png"
+      },
+      "win_streak": "1W",
+      "record": "15–9",
+      "total_winnings": "$860,500"
+    },
+    {
+      "team_name": "Sentinels",
+      "team_logo": "//owcdn.net/img/62875027c8e06.png",
+      "team_url": "www.vlr.gg/team/2/sentinels",
+      "team_rank": "5",
+      "rating_score": "1796",
+      "recent_match": {
+        "match_url": "www.vlr.gg/286660/sentinels-vs-paper-rex-afreecatv-valorant-league-gf",
+        "match_time": "68d ago",
+        "opponent_team_name": "Paper Rex",
+        "opponent_team_logo_url": "//owcdn.net/img/62bbeba74d5cb.png"
+      },
+      "win_streak": "10W",
+      "record": "15–8",
+      "total_winnings": "$45,500"
+    },
+    {
+      "team_name": "Oxygen Esports",
+      "team_logo": "//owcdn.net/img/653fa8ce98a2e.png",
+      "team_url": "www.vlr.gg/team/10725/oxygen-esports",
+      "team_rank": "6",
+      "rating_score": "1782",
+      "recent_match": {
+        "match_url": "www.vlr.gg/294185/moist-x-shopify-vs-oxygen-esports-ludwig-x-tarik-invitational-2-gf",
+        "match_time": "33d ago",
+        "opponent_team_name": "Moist x Shopify",
+        "opponent_team_logo_url": "//owcdn.net/img/650b5262aa2b4.png"
+      },
+      "win_streak": "2W",
+      "record": "30–10",
+      "total_winnings": "$41,500"
+    },
+    {
+      "team_name": "Cloud9",
+      "team_logo": "//owcdn.net/img/628addcbd509e.png",
+      "team_url": "www.vlr.gg/team/188/cloud9",
+      "team_rank": "7",
+      "rating_score": "1715",
+      "recent_match": {
+        "match_url": "www.vlr.gg/294187/oxygen-esports-vs-cloud9-ludwig-x-tarik-invitational-2-lbf",
+        "match_time": "33d ago",
+        "opponent_team_name": "Oxygen Esports",
+        "opponent_team_logo_url": "//owcdn.net/img/653fa8ce98a2e.png"
+      },
+      "win_streak": "1L",
+      "record": "20–12",
+      "total_winnings": "$224,143"
+    },
+    {
+      "team_name": "Turtle Troop",
+      "team_logo": "//owcdn.net/img/63d552c5dd028.png",
+      "team_url": "www.vlr.gg/team/11836/turtle-troop",
+      "team_rank": "8",
+      "rating_score": "1699",
+      "recent_match": {
+        "match_url": "www.vlr.gg/290944/turtle-troop-vs-sad-esports-sean-gares-off-season-showdown-qf",
+        "match_time": "69d ago",
+        "opponent_team_name": "SaD Esports",
+        "opponent_team_logo_url": "//owcdn.net/img/6528e9505cb61.png"
+      },
+      "win_streak": "1L",
+      "record": "36–9",
+      "total_winnings": "$15,500"
+    },
+    {
+      "team_name": "Moist x Shopify",
+      "team_logo": "//owcdn.net/img/650b5262aa2b4.png",
+      "team_url": "www.vlr.gg/team/13188/moist-x-shopify",
+      "team_rank": "9",
+      "rating_score": "1667",
+      "recent_match": {
+        "match_url": "www.vlr.gg/294185/moist-x-shopify-vs-oxygen-esports-ludwig-x-tarik-invitational-2-gf",
+        "match_time": "33d ago",
+        "opponent_team_name": "Oxygen Esports",
+        "opponent_team_logo_url": "//owcdn.net/img/653fa8ce98a2e.png"
+      },
+      "win_streak": "1L",
+      "record": "50–11",
+      "total_winnings": "$26,600"
+    },
+    {
+      "team_name": "100 Thieves",
+      "team_logo": "//owcdn.net/img/603c00d5c5a08.png",
+      "team_url": "www.vlr.gg/team/120/100-thieves",
+      "team_rank": "10",
+      "rating_score": "1645",
+      "recent_match": {
+        "match_url": "www.vlr.gg/294186/cloud9-vs-100-thieves-ludwig-x-tarik-invitational-2-lr1",
+        "match_time": "33d ago",
+        "opponent_team_name": "Cloud9",
+        "opponent_team_logo_url": "//owcdn.net/img/628addcbd509e.png"
+      },
+      "win_streak": "3L",
+      "record": "5–10",
+      "total_winnings": "$114,000"
+    }
+  ]
+}

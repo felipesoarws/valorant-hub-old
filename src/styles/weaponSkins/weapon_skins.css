@@ -1,0 +1,114 @@
+.main__weapons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .main__weapons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .main__weapons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  .main__weapons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+.main__weapons .main__weapon {
+  height: 10rem;
+  width: 16rem;
+  margin: 1rem 0;
+  display: none;
+  visibility: hidden;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+.main__weapons .main__weapon:hover {
+  background: rgba(128, 0, 128, 0.3);
+}
+.main__weapons .main__weapon:hover .main__weapon__icon img {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 2px 2px black);
+}
+@media (min-width: 375px) {
+  .main__weapons .main__weapon {
+    width: 20rem;
+  }
+}
+@media (min-width: 1024px) {
+  .main__weapons .main__weapon {
+    width: 18rem;
+  }
+}
+@media (min-width: 1200px) {
+  .main__weapons .main__weapon {
+    width: 21rem;
+  }
+}
+@media (min-width: 1440px) {
+  .main__weapons .main__weapon {
+    width: 22rem;
+  }
+}
+.main__weapons .main__weapon.show {
+  display: block;
+  visibility: visible;
+}
+.main__weapons .main__weapon .main__weapon__bg {
+  position: relative;
+}
+.main__weapons .main__weapon .main__weapon__bg img.bg__image {
+  z-index: -10;
+  opacity: 0.5;
+  border-radius: 0.7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+          mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+.main__weapons .main__weapon .main__weapon__bg .main__weapon__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.main__weapons .main__weapon .main__weapon__bg .main__weapon__icon img {
+  width: 11rem;
+  transition: all 0.3s ease-in-out;
+}
+.main__weapons .main__weapon .main__weapon__bg .main__weapon__icon img:nth-child(1) {
+  width: 13rem;
+}
+.main__weapons .main__weapon .main__weapon__title {
+  position: absolute;
+  left: 0.8rem;
+  top: 0.8rem;
+  z-index: 10;
+}
+.main__weapons .main__weapon .main__weapon__title h1 {
+  color: white;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-family: "Inter Tight", sans-serif;
+}/*# sourceMappingURL=weapon_skins.css.map */

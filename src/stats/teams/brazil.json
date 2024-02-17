@@ -1,0 +1,164 @@
+{
+  "teams": [
+    {
+      "team_name": "LOUD",
+      "team_logo": "//owcdn.net/img/62bbec8dc1b9f.png",
+      "team_url": "www.vlr.gg/team/6961/loud",
+      "team_rank": "1",
+      "rating_score": "2000",
+      "recent_match": {
+        "match_url": "www.vlr.gg/248283/evil-geniuses-vs-loud-valorant-champions-2023-playoffs-lbf",
+        "match_time": "175d ago",
+        "opponent_team_name": "Evil Geniuses",
+        "opponent_team_logo_url": "//owcdn.net/img/62a409ad29351.png"
+      },
+      "win_streak": "1L",
+      "record": "3–2",
+      "total_winnings": "$902,507"
+    },
+    {
+      "team_name": "Hero Base",
+      "team_logo": "//owcdn.net/img/65cbb978125e5.png",
+      "team_url": "www.vlr.gg/team/15117/hero-base",
+      "team_rank": "2",
+      "rating_score": "1748",
+      "recent_match": {
+        "match_url": "www.vlr.gg/299605/hero-base-vs-legacy-gamers-club-challengers-league-2024-brazil-split-1-regular-season-w1",
+        "match_time": "2d ago",
+        "opponent_team_name": "Legacy",
+        "opponent_team_logo_url": "//owcdn.net/img/6512452f60eb7.png"
+      },
+      "win_streak": "2L",
+      "record": "2–2",
+      "total_winnings": "$63,932"
+    },
+    {
+      "team_name": "FURIA",
+      "team_logo": "//owcdn.net/img/632be843b7d51.png",
+      "team_url": "www.vlr.gg/team/2406/furia",
+      "team_rank": "3",
+      "rating_score": "1692",
+      "recent_match": {
+        "match_url": "www.vlr.gg/289452/global-esports-vs-furia-convergence-2023-d3",
+        "match_time": "62d ago",
+        "opponent_team_name": "Global Esports",
+        "opponent_team_logo_url": "//owcdn.net/img/629f316ddd4dd.png"
+      },
+      "win_streak": "3L",
+      "record": "7–4",
+      "total_winnings": "$123,788"
+    },
+    {
+      "team_name": "Legacy",
+      "team_logo": "//owcdn.net/img/6512452f60eb7.png",
+      "team_url": "www.vlr.gg/team/15021/legacy",
+      "team_rank": "4",
+      "rating_score": "1669",
+      "recent_match": {
+        "match_url": "www.vlr.gg/299605/hero-base-vs-legacy-gamers-club-challengers-league-2024-brazil-split-1-regular-season-w1",
+        "match_time": "2d ago",
+        "opponent_team_name": "Hero Base",
+        "opponent_team_logo_url": "//owcdn.net/img/65cbb978125e5.png"
+      },
+      "win_streak": "1W",
+      "record": "13–3",
+      "total_winnings": "$10,128"
+    },
+    {
+      "team_name": "MIBR",
+      "team_logo": "//owcdn.net/img/632be7626d6d9.png",
+      "team_url": "www.vlr.gg/team/7386/mibr",
+      "team_rank": "5",
+      "rating_score": "1566",
+      "recent_match": {
+        "match_url": "www.vlr.gg/280353/xit-vs-mibr-multiplatform-esports-game-2023-playoffs-lbf",
+        "match_time": "117d ago",
+        "opponent_team_name": "XIT",
+        "opponent_team_logo_url": "//owcdn.net/img/65260fd64f5f4.png"
+      },
+      "win_streak": "1L",
+      "record": "5–2",
+      "total_winnings": "$51,643"
+    },
+    {
+      "team_name": "Galorys",
+      "team_logo": "//owcdn.net/img/65c8a0e626f06.png",
+      "team_url": "www.vlr.gg/team/10755/galorys",
+      "team_rank": "6",
+      "rating_score": "1540",
+      "recent_match": {
+        "match_url": "www.vlr.gg/299609/tbk-esports-vs-galorys-gamers-club-challengers-league-2024-brazil-split-1-regular-season-w1",
+        "match_time": "1d ago",
+        "opponent_team_name": "TBK Esports",
+        "opponent_team_logo_url": "//owcdn.net/img/61d39894f3d3a.png"
+      },
+      "win_streak": "3L",
+      "record": "4–4",
+      "total_winnings": "$4,332"
+    },
+    {
+      "team_name": "XLD Gaming",
+      "team_logo": "//owcdn.net/img/65c8a8af4aced.png",
+      "team_url": "www.vlr.gg/team/15074/xld-gaming",
+      "team_rank": "7",
+      "rating_score": "1531",
+      "recent_match": {
+        "match_url": "www.vlr.gg/299606/olimpo-vs-xld-gaming-gamers-club-challengers-league-2024-brazil-split-1-regular-season-w1",
+        "match_time": "2d ago",
+        "opponent_team_name": "OLIMPO",
+        "opponent_team_logo_url": "//owcdn.net/img/65c89a8a1f301.png"
+      },
+      "win_streak": "4W",
+      "record": "8–1",
+      "total_winnings": "$0"
+    },
+    {
+      "team_name": "CO-OP.gg",
+      "team_logo": "//owcdn.net/img/65c8a74a143ee.png",
+      "team_url": "www.vlr.gg/team/15073/co-op-gg",
+      "team_rank": "8",
+      "rating_score": "1469",
+      "recent_match": {
+        "match_url": "www.vlr.gg/299607/stellae-gaming-vs-co-op-gg-gamers-club-challengers-league-2024-brazil-split-1-regular-season-w1",
+        "match_time": "2d ago",
+        "opponent_team_name": "Stellae Gaming",
+        "opponent_team_logo_url": "//owcdn.net/img/6597892f756bf.png"
+      },
+      "win_streak": "1L",
+      "record": "6–1",
+      "total_winnings": "$0"
+    },
+    {
+      "team_name": "OLIMPO",
+      "team_logo": "//owcdn.net/img/65c89a8a1f301.png",
+      "team_url": "www.vlr.gg/team/14470/olimpo",
+      "team_rank": "9",
+      "rating_score": "1467",
+      "recent_match": {
+        "match_url": "www.vlr.gg/299606/olimpo-vs-xld-gaming-gamers-club-challengers-league-2024-brazil-split-1-regular-season-w1",
+        "match_time": "2d ago",
+        "opponent_team_name": "XLD Gaming",
+        "opponent_team_logo_url": "//owcdn.net/img/65c8a8af4aced.png"
+      },
+      "win_streak": "2L",
+      "record": "2–3",
+      "total_winnings": "$24,575"
+    },
+    {
+      "team_name": "SAIDEIRA ESPORTS",
+      "team_logo": "//owcdn.net/img/65c7c17df2518.png",
+      "team_url": "www.vlr.gg/team/14647/saideira-esports",
+      "team_rank": "10",
+      "rating_score": "1449",
+      "recent_match": {
+        "match_url": "www.vlr.gg/298828/saideira-esports-vs-sagaz-corsair-championship-2024-gf",
+        "match_time": "7d ago",
+        "opponent_team_name": "SAGAZ",
+        "opponent_team_logo_url": "//owcdn.net/img/6526061a28bc6.png"
+      },
+      "win_streak": "3W",
+      "record": "6–3",
+      "total_winnings": "$1,800"
+    }
+  ]
+}

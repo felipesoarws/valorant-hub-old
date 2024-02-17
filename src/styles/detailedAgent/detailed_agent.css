@@ -1,0 +1,276 @@
+.fade-out {
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+          mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.rec-carousel-wrapper {
+  background-color: transparent;
+}
+.rec-carousel-wrapper button {
+  background-color: transparent;
+  border: 0;
+  box-shadow: 0 0 0 0;
+}
+
+.kXteup,
+.hGRYOm {
+  background-color: transparent;
+}
+
+.kXteup:hover:enabled,
+.kXteup:focus:enabled,
+.hGRYOm:hover:enabled,
+.hGRYOm:focus:enabled {
+  color: white !important;
+  background-color: transparent !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+/* square buttons */
+.rec.rec-arrow {
+  border-radius: 0;
+}
+
+/* round buttons on hover */
+.rec.rec-arrow:hover {
+  border-radius: 51%;
+}
+
+/* hide disabled buttons */
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+}
+
+/* disable default outline on focused items */
+/* add custom outline on focused items */
+.rec-carousel-item:focus {
+  outline: none;
+  box-shadow: inset 0 0 1px 1px lightgrey;
+}
+
+.main__title__error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.main__title__error h1,
+.main__title__error p {
+  color: white;
+  font-weight: 500;
+}
+.main__title__error img {
+  width: 10rem;
+  margin: 2rem 0;
+}
+
+body {
+  background-color: #1f2334;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  body {
+    padding: 1rem 7rem;
+  }
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.bg img {
+  height: 70vh;
+  opacity: 0.15;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .bg img {
+    height: 50vh;
+  }
+}
+
+header.da__scss {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+@media (min-width: 768px) {
+  header.da__scss {
+    padding: 2rem 2rem 0 2rem;
+  }
+}
+header.da__scss .header__logo img {
+  width: 3rem;
+}
+header.da__scss .header__back_home button {
+  border: 0;
+  outline: 0;
+  font-size: 3rem;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  color: rgba(164, 162, 176, 0.4);
+}
+header.da__scss .header__back_home button:hover {
+  color: white;
+}
+
+main.da__scss {
+  margin: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  main.da__scss {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  main.da__scss {
+    gap: 4rem;
+  }
+}
+main.da__scss .agent__bg {
+  transform: translateY(-2rem) translateX(-1rem);
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  main.da__scss .agent__bg {
+    overflow: visible;
+  }
+}
+main.da__scss .agent__bg img.agent {
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.3;
+}
+@media (min-width: 768px) {
+  main.da__scss .agent__bg img.agent {
+    height: 30rem;
+  }
+}
+main.da__scss .agent__portrait {
+  position: absolute;
+  top: 1rem;
+  right: -8rem;
+}
+main.da__scss .agent__portrait img.agent-1 {
+  height: 25rem;
+  width: 25rem;
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  main.da__scss .agent__portrait img.agent-1 {
+    height: 30rem;
+    width: 30rem;
+  }
+}
+@media (min-width: 1024px) {
+  main.da__scss .agent__portrait img.agent-1 {
+    height: 35rem;
+    width: 35rem;
+  }
+}
+main.da__scss .agent__details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  main.da__scss .agent__details {
+    gap: 0.5rem;
+    margin-bottom: 2.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  main.da__scss .agent__details {
+    margin-bottom: 0rem;
+    gap: 1rem;
+  }
+}
+main.da__scss .agent__details p {
+  color: #a4a2b0;
+  font-size: 0.8rem;
+  margin: 0.2rem 0;
+}
+@media (min-width: 1024px) {
+  main.da__scss .agent__details p {
+    font-size: 1rem;
+  }
+}
+main.da__scss .agent__details h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin: 0.7rem 0;
+}
+@media (min-width: 768px) {
+  main.da__scss .agent__details h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 0.2rem 0;
+  }
+}
+@media (min-width: 425px) {
+  main.da__scss .agent__details .agent__details__desc {
+    width: 20rem;
+  }
+}
+@media (min-width: 768px) {
+  main.da__scss .agent__details .agent__details__abilities {
+    width: 320px;
+  }
+}
+main.da__scss .agent__details .agent__details__abilities__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+@media (min-width: 375px) {
+  main.da__scss .agent__details .agent__details__abilities__row {
+    gap: 1.1rem;
+  }
+}
+@media (min-width: 768px) {
+  main.da__scss .agent__details .agent__details__abilities__row {
+    align-items: center;
+    justify-content: start;
+    gap: 1.7rem;
+  }
+}
+main.da__scss .agent__details .agent__details__abilities__row .agent__details__ability {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+main.da__scss .agent__details .agent__details__abilities__row .agent__details__ability img {
+  text-align: center;
+  width: 2.5rem;
+  margin: 0.4rem 0;
+}
+@media (min-width: 425px) {
+  main.da__scss .agent__details .agent__details__role {
+    width: 20rem;
+  }
+}/*# sourceMappingURL=detailed_agent.css.map */

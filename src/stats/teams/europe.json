@@ -1,0 +1,164 @@
+{
+  "teams": [
+    {
+      "team_name": "FNATIC",
+      "team_logo": "//owcdn.net/img/62a40cc2b5e29.png",
+      "team_url": "www.vlr.gg/team/2593/fnatic",
+      "team_rank": "1",
+      "rating_score": "2000",
+      "recent_match": {
+        "match_url": "www.vlr.gg/283101/cloud9-vs-fnatic-red-bull-home-ground-4-gf",
+        "match_time": "103d ago",
+        "opponent_team_name": "Cloud9",
+        "opponent_team_logo_url": "//owcdn.net/img/628addcbd509e.png"
+      },
+      "win_streak": "4W",
+      "record": "25–3",
+      "total_winnings": "$972,285"
+    },
+    {
+      "team_name": "Gentle Mates",
+      "team_logo": "//owcdn.net/img/643bed90680b9.png",
+      "team_url": "www.vlr.gg/team/12694/gentle-mates",
+      "team_rank": "2",
+      "rating_score": "1701",
+      "recent_match": {
+        "match_url": "www.vlr.gg/237652/apeks-vs-gentle-mates-champions-tour-2023-emea-ascension-gf",
+        "match_time": "215d ago",
+        "opponent_team_name": "Apeks",
+        "opponent_team_logo_url": "//owcdn.net/img/63bd4a379f758.png"
+      },
+      "win_streak": "3W",
+      "record": "23–7",
+      "total_winnings": "$48,150"
+    },
+    {
+      "team_name": "FUT Esports",
+      "team_logo": "//owcdn.net/img/632be9976b8fe.png",
+      "team_url": "www.vlr.gg/team/1184/fut-esports",
+      "team_rank": "3",
+      "rating_score": "1693",
+      "recent_match": {
+        "match_url": "www.vlr.gg/289453/team-vitality-vs-fut-esports-convergence-2023-gf",
+        "match_time": "61d ago",
+        "opponent_team_name": "Team Vitality",
+        "opponent_team_logo_url": "//owcdn.net/img/6466d79e1ed40.png"
+      },
+      "win_streak": "3W",
+      "record": "20–12",
+      "total_winnings": "$295,990"
+    },
+    {
+      "team_name": "Acend",
+      "team_logo": "//owcdn.net/img/62a4157412b4f.png",
+      "team_url": "www.vlr.gg/team/3531/acend",
+      "team_rank": "4",
+      "rating_score": "1689",
+      "recent_match": {
+        "match_url": "www.vlr.gg/294053/zero-tenacity-vs-acend-challengers-league-2024-east-surge-split-1-regular-season-w5",
+        "match_time": "4d ago",
+        "opponent_team_name": "Zero Tenacity",
+        "opponent_team_logo_url": "//owcdn.net/img/642969ca2c5ad.png"
+      },
+      "win_streak": "1L",
+      "record": "45–10",
+      "total_winnings": "$53,665"
+    },
+    {
+      "team_name": "Team Liquid",
+      "team_logo": "//owcdn.net/img/640c381f0603f.png",
+      "team_url": "www.vlr.gg/team/474/team-liquid",
+      "team_rank": "5",
+      "rating_score": "1647",
+      "recent_match": {
+        "match_url": "www.vlr.gg/286658/sentinels-vs-team-liquid-afreecatv-valorant-league-sf",
+        "match_time": "69d ago",
+        "opponent_team_name": "Sentinels",
+        "opponent_team_logo_url": "//owcdn.net/img/62875027c8e06.png"
+      },
+      "win_streak": "1L",
+      "record": "13–10",
+      "total_winnings": "$188,000"
+    },
+    {
+      "team_name": "Natus Vincere",
+      "team_logo": "//owcdn.net/img/62a4109ddbd7f.png",
+      "team_url": "www.vlr.gg/team/4915/natus-vincere",
+      "team_rank": "6",
+      "rating_score": "1634",
+      "recent_match": {
+        "match_url": "www.vlr.gg/287763/zeta-division-vs-natus-vincere-riot-games-one-2023-d2",
+        "match_time": "75d ago",
+        "opponent_team_name": "ZETA DIVISION",
+        "opponent_team_logo_url": "//owcdn.net/img/62a411783d94d.png"
+      },
+      "win_streak": "3W",
+      "record": "14–11",
+      "total_winnings": "$382,992"
+    },
+    {
+      "team_name": "MOUZ",
+      "team_logo": "//owcdn.net/img/61f8e777f0e8f.png",
+      "team_url": "www.vlr.gg/team/8044/mouz",
+      "team_rank": "7",
+      "rating_score": "1617",
+      "recent_match": {
+        "match_url": "www.vlr.gg/299353/sk-gaming-vs-mouz-challengers-league-2024-dach-evolution-split-1-regular-season-r2",
+        "match_time": "5h ago",
+        "opponent_team_name": "SK Gaming",
+        "opponent_team_logo_url": "//owcdn.net/img/659ecda9c6382.png"
+      },
+      "win_streak": "2W",
+      "record": "29–6",
+      "total_winnings": "$22,662"
+    },
+    {
+      "team_name": "DSYRE",
+      "team_logo": "//owcdn.net/img/639b017f8d1fd.png",
+      "team_url": "www.vlr.gg/team/6538/dsyre",
+      "team_rank": "8",
+      "rating_score": "1602",
+      "recent_match": {
+        "match_url": "www.vlr.gg/296829/dsyre-vs-qlash-challengers-league-2024-italy-rinascimento-split-1-regular-season-w3",
+        "match_time": "5d ago",
+        "opponent_team_name": "QLASH",
+        "opponent_team_logo_url": "//owcdn.net/img/62efc0067ed80.png"
+      },
+      "win_streak": "6W",
+      "record": "33–11",
+      "total_winnings": "$10,322"
+    },
+    {
+      "team_name": "KPI Gaming",
+      "team_logo": "//owcdn.net/img/6359119895b14.png",
+      "team_url": "www.vlr.gg/team/6313/kpi-gaming",
+      "team_rank": "9",
+      "rating_score": "1596",
+      "recent_match": {
+        "match_url": "www.vlr.gg/293952/kpi-gaming-vs-case-esports-challengers-league-2024-spain-rising-split-1-r10",
+        "match_time": "3d ago",
+        "opponent_team_name": "Case Esports",
+        "opponent_team_logo_url": "//owcdn.net/img/65410064b845b.png"
+      },
+      "win_streak": "2W",
+      "record": "17–4",
+      "total_winnings": "$42,857"
+    },
+    {
+      "team_name": "S2G Esports",
+      "team_logo": "//owcdn.net/img/628ccb7095263.png",
+      "team_url": "www.vlr.gg/team/9077/s2g-esports",
+      "team_rank": "10",
+      "rating_score": "1576",
+      "recent_match": {
+        "match_url": "www.vlr.gg/233059/fokus-vs-s2g-esports-champions-tour-2023-emea-ascension-gf",
+        "match_time": "234d ago",
+        "opponent_team_name": "FOKUS",
+        "opponent_team_logo_url": "//owcdn.net/img/627934cd0b505.png"
+      },
+      "win_streak": "1L",
+      "record": "15–5",
+      "total_winnings": "$10,996"
+    }
+  ]
+}
